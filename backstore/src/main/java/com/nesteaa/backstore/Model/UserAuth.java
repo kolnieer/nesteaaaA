@@ -2,7 +2,6 @@ package com.nesteaa.backstore.Model;
 
 import java.util.Set;
 
-import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -18,7 +17,7 @@ import jakarta.persistence.UniqueConstraint;
 @Entity
 @Table(uniqueConstraints = {
     @UniqueConstraint(columnNames = {"username"}),
-    @UniqueConstraint(columnNames = {"ëmail"}),
+    @UniqueConstraint(columnNames = {"email"}),
 })
 public class UserAuth {
 
